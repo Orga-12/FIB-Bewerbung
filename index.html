@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FIB – Director Application | Gimo Jimmbo</title>
+<title>FIB – Director Bewerbung | Gimo Jimmbo</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;600;700;900&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -35,8 +35,7 @@ body{background:var(--bg);color:var(--text);font-family:'Rajdhani',sans-serif;ov
 #loader{position:fixed;inset:0;z-index:9999;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;transition:transform 1.1s cubic-bezier(0.76,0,0.24,1), opacity 0.4s ease 0.8s;}
 #loader.out{transform:translateY(-100%);opacity:0;}
 #loader::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.12) 3px,rgba(0,0,0,.12) 4px);pointer-events:none;z-index:1;}
-.l-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(201,168,76,.04) 1px, transparent 1px),linear-gradient(90deg, rgba(201,168,76,.04) 1px, transparent 1px);background-size:70px 70px;opacity:0;animation:gFade 1s ease .3s forwards;}
-@keyframes gFade{to{opacity:1}}
+/* .l-grid REMOVED */
 .l-frame{position:absolute;inset:20px;pointer-events:none;z-index:2;opacity:0;animation:cFade .6s ease .4s forwards;}
 .l-frame-top,.l-frame-bottom{position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg, transparent 0%, var(--gold-d) 20%, var(--gold) 50%, var(--gold-d) 80%, transparent 100%);}
 .l-frame-top{top:0;}.l-frame-bottom{bottom:0;}
@@ -88,7 +87,7 @@ body{background:var(--bg);color:var(--text);font-family:'Rajdhani',sans-serif;ov
 
 #hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;}
 .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 30%, rgba(13,27,69,.5) 0%, transparent 70%),radial-gradient(ellipse 40% 40% at 20% 80%, rgba(201,168,76,.04) 0%, transparent 60%),var(--bg);}
-.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(201,168,76,.03) 1px, transparent 1px),linear-gradient(90deg, rgba(201,168,76,.03) 1px, transparent 1px);background-size:70px 70px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 100%);}
+/* .hero-grid REMOVED — kein Gitter mehr */
 .hero-content{position:relative;z-index:1;text-align:center;padding:0 40px;overflow:visible;}
 .hero-eyebrow{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:5px;color:var(--gold);border:1px solid var(--gold-d);padding:6px 20px;display:inline-block;margin-bottom:40px;background:rgba(201,168,76,.05);opacity:0;animation:fadeUp .7s ease .2s forwards;}
 .hero-name{font-family:'Great Vibes',cursive;font-size:clamp(40px,7vw,76px);color:var(--gold);line-height:1.3;margin-bottom:10px;padding:0.1em 10px;text-shadow:0 0 50px rgba(201,168,76,.3);opacity:0;animation:fadeUp .7s ease .6s forwards;overflow:visible;}
@@ -203,7 +202,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
 .footer-sig{font-family:'Great Vibes',cursive;font-size:52px;color:var(--gold);text-shadow:0 0 30px rgba(201,168,76,.25);}
 .footer-meta{font-family:'Courier Prime',monospace;font-size:8px;letter-spacing:4px;color:var(--dim);margin-top:32px;text-transform:uppercase;}
 
-.hero-stamp{position:absolute;top:90px;right:clamp(20px,5vw,60px);font-family:'Orbitron',sans-serif;font-size:clamp(10px,1.2vw,14px);font-weight:900;letter-spacing:6px;color:rgba(180,30,30,.75);border:2px solid rgba(180,30,30,.5);padding:7px 18px;transform:rotate(-10deg);pointer-events:none;z-index:2;animation:stampIn .6s cubic-bezier(.34,1.56,.64,1) 5.2s both;box-shadow:inset 0 0 20px rgba(180,30,30,.08),0 0 16px rgba(180,30,30,.1);}
+.hero-stamp{position:absolute;top:370px;right:clamp(710px,1vw,100px);font-family:'Orbitron',sans-serif;font-size:clamp(45px,1.2vw,14px);font-weight:900;letter-spacing:6px;color:rgba(180,30,30,.75);border:2px solid rgba(180,30,30,.5);padding:7px 18px;transform:rotate(-10deg);pointer-events:none;z-index:2;animation:stampIn .6s cubic-bezier(.34,1.56,.64,1) 7.5s both;box-shadow:inset 0 0 20px rgba(180,30,30,.08),0 0 16px rgba(180,30,30,.1);}
 @keyframes stampIn{from{opacity:0;transform:rotate(-10deg) scale(2.5);}to{opacity:1;transform:rotate(-10deg) scale(1);}}
 
 body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(ellipse 60% 50% at 20% 60%, rgba(13,27,69,.35) 0%, transparent 70%),radial-gradient(ellipse 50% 40% at 80% 30%, rgba(201,168,76,.04) 0%, transparent 65%),radial-gradient(ellipse 40% 35% at 50% 90%, rgba(13,27,69,.2) 0%, transparent 60%);animation:ambientDrift 18s ease-in-out infinite alternate;}
@@ -211,8 +210,6 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;bac
 
 .hero-bg{animation:heroBgPulse 12s ease-in-out infinite alternate;}
 @keyframes heroBgPulse{0%{opacity:.8;}100%{opacity:1;}}
-.hero-grid{animation:gridDrift 25s linear infinite;}
-@keyframes gridDrift{0%{background-position:0 0;}100%{background-position:70px 70px;}}
 
 .text-panel{transition:border-left-color .35s,box-shadow .35s,background .35s;}
 .text-panel:hover{border-left-color:var(--gold-l);background:linear-gradient(90deg, rgba(201,168,76,.03) 0%, var(--panel) 40%);box-shadow:-2px 0 16px rgba(201,168,76,.08);}
@@ -270,7 +267,7 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;bac
 .visum-pct{font-family:'Courier Prime',monospace;font-size:9px;color:var(--gold);letter-spacing:2px;}
 
 .stats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px;margin-bottom:48px;}
-.stat-card{background:var(--panel);border:1px solid var(--border);padding:28px 24px;position:relative;overflow:hidden;transition:border-color .3s,transform .25s;}
+.stat-card{background:var(--panel);border:1px solid var(--border);padding:28px 24px;position:relative;overflow:hidden;transition:border-color .3s,transform .25px;}
 .stat-card:hover{border-color:rgba(201,168,76,.3);transform:translateY(-3px);}
 .stat-card::before{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity .3s;}
 .stat-card:hover::before{opacity:1;}
@@ -309,33 +306,9 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;bac
 .gallery-item:hover .gallery-overlay{opacity:1;}
 .gallery-caption{font-family:'Orbitron',sans-serif;font-size:9px;letter-spacing:2px;color:var(--gold);}
 
-/* ===== LIGHTBOX FIX ===== */
-#lightbox{
-  position:fixed;
-  inset:0;
-  z-index:99990;
-  background:rgba(0,0,0,.93);
-  display:none;
-  align-items:center;
-  justify-content:center;
-  cursor:pointer;
-}
-#lightbox.open{
-  display:flex !important;
-}
-#lightbox img{
-  max-width:90vw;
-  max-height:88vh;
-  width:auto;
-  height:auto;
-  object-fit:contain;
-  display:block;
-  border:1px solid rgba(201,168,76,.2);
-  box-shadow:0 0 80px rgba(0,0,0,.8);
-  cursor:default;
-}
-/* ===== END LIGHTBOX FIX ===== */
-
+#lightbox{position:fixed;inset:0;z-index:99990;background:rgba(0,0,0,.93);display:none;align-items:center;justify-content:center;cursor:pointer;}
+#lightbox.open{display:flex !important;}
+#lightbox img{max-width:90vw;max-height:88vh;width:auto;height:auto;object-fit:contain;display:block;border:1px solid rgba(201,168,76,.2);box-shadow:0 0 80px rgba(0,0,0,.8);cursor:default;}
 #lightbox-close{position:absolute;top:24px;right:32px;font-family:'Orbitron',sans-serif;font-size:11px;letter-spacing:3px;color:var(--dim);cursor:pointer;transition:color .2s;z-index:99991;}
 #lightbox-close:hover{color:var(--gold);}
 
@@ -376,7 +349,7 @@ body:has(a:hover) #cursor-ring,body:has(button:hover) #cursor-ring{width:44px;he
 <div id="custom-cursor"></div>
 <div id="cursor-ring"></div>
 <div id="loader">
-  <div class="l-grid"></div>
+  <!-- l-grid div REMOVED -->
   <div class="l-frame">
     <div class="l-frame-top"></div><div class="l-frame-bottom"></div>
     <div class="l-frame-left"></div><div class="l-frame-right"></div>
@@ -387,7 +360,7 @@ body:has(a:hover) #cursor-ring,body:has(button:hover) #cursor-ring{width:44px;he
     <div class="l-ring-outer"></div><div class="l-ring-mid"></div>
     <div class="l-logo"><img src="https://i.imgur.com/sSEEHBU.png" alt="FIB"></div>
   </div>
-  <div class="l-title">F · I · B</div>
+  <div class="l-title">F·I·B</div>
   <div class="l-sub">FEDERAL INVESTIGATION BUREAU — BEWERBUNG 2026</div>
   <div class="l-bar-wrap"><div class="l-bar-fill"></div></div>
   <div class="l-status" id="l-status">SECURE CONNECTION INITIALIZING...</div>
@@ -418,10 +391,10 @@ body:has(a:hover) #cursor-ring,body:has(button:hover) #cursor-ring{width:44px;he
 
 <section id="hero">
   <div class="hero-bg"></div>
-  <div class="hero-grid"></div>
-  <div class="hero-stamp">CLASSIFIED</div>
+  <!-- hero-grid div REMOVED -->
+  <div class="hero-stamp">KLASSIFIZIERT</div>
   <div class="hero-content">
-    <div class="hero-eyebrow">DIRECTOR APPLICATION · VERTRAULICH · 2026</div>
+    <div class="hero-eyebrow">DIRECTOR OF FIB BEWERBUNG · VERTRAULICH · 2026</div>
     <div class="hero-name">Gimo Jimmbo</div>
     <div class="hero-sub">DIRECTOR OF FIB — BEWERBUNG 2026</div>
     <div class="hero-div"></div>
@@ -442,7 +415,7 @@ body:has(a:hover) #cursor-ring,body:has(button:hover) #cursor-ring{width:44px;he
     <div class="s-title-bar reveal"></div>
     <div class="sb-grid reveal">
       <div class="sb-photo-wrap">
-        <img src="https://i.imgur.com/sSEEHBU.png" alt="FIB Logo" style="width:160px;height:160px;object-fit:contain;border:2px solid var(--gold);background:#0a0b16;padding:8px;">
+        <img src="https://i.imgur.com/nfFNvmj.png" alt="FIB Logo" style="width:160px;height:160px;object-fit:contain;border:2px solid var(--gold);background:#0a0b16;padding:8px;">
       </div>
       <div>
         <div class="sb-table">
@@ -466,11 +439,11 @@ body:has(a:hover) #cursor-ring,body:has(button:hover) #cursor-ring{width:44px;he
     <div class="s-label reveal">02 / MOTIVATION</div>
     <div class="s-title reveal">Warum <span>Leader?</span></div>
     <div class="s-title-bar reveal"></div>
-    <div class="text-panel reveal" data-tag="WHY.01">
+    <div class="text-panel reveal" data-tag="Warum.01">
       <div class="panel-title">Motivation & Vision</div>
       <div class="panel-body">Ich möchte Leader des FIBs werden, weil ich das FIB als eine der wichtigsten Organisationen auf unserem Server betrachte. Für mich ist das FIB nicht nur eine Behörde – es ist ein Symbol für Gerechtigkeit, Struktur und Verlässlichkeit. Ich bringe bereits umfangreiche Erfahrungen aus verschiedenen Führungspositionen mit und habe gelernt, wie man ein Team motiviert, Strukturen aufbaut und in schwierigen Situationen die richtigen Entscheidungen trifft. Was mich von anderen Bewerbern unterscheidet, ist meine Kombination aus strategischem Denken, Empathie gegenüber Mitarbeitern und der Bereitschaft, Verantwortung vollständig zu übernehmen. Meine Vision: Ein FIB, das professionell, aktiv und respektiert ist – sowohl intern als auch in der Öffentlichkeit.</div>
     </div>
-    <div class="text-panel reveal" data-tag="WHY.02">
+    <div class="text-panel reveal" data-tag="Warum.02">
       <div class="panel-title">Langfristige Ziele</div>
       <div class="panel-body">Langfristig möchte ich das FIB zu einer der aktivsten und angesehensten Organisationen auf dem Server entwickeln. Dazu gehört der Aufbau klarer interner Strukturen, die Stärkung der einzelnen Abteilungen und die Förderung einer offenen Kommunikationskultur. Ich möchte sicherstellen, dass jeder Mitarbeiter – vom Trainee bis zum High Command – weiß, welche Aufgaben er hat und wie er sich weiterentwickeln kann. Probleme wie mangelnde Aktivität oder fehlende Transparenz möchte ich durch regelmäßige interne Events, klare Beförderungskriterien und eine engere Zusammenarbeit zwischen den Abteilungen lösen. Das FIB soll ein Ort sein, an dem man gerne arbeitet und stolz ist, Mitglied zu sein.</div>
     </div>
@@ -500,14 +473,14 @@ body:has(a:hover) #cursor-ring,body:has(button:hover) #cursor-ring{width:44px;he
       <div class="dept-item reveal" onclick="toggleDept(this)">
         <div class="dept-head">
           <div class="dept-head-l">
-            <div class="dept-code">LAW ENFORCEMENT</div>
+            <div class="dept-code">LAW</div>
             <div><div class="dept-name">Legal Affairs Wing</div><div class="dept-fullname">Rechtsangelegenheiten & juristische Unterstützung</div></div>
           </div>
           <div class="dept-toggle">+</div>
         </div>
         <div class="dept-body">
           <div class="dept-content">
-            <div class="dept-logo-box"><img src="https://i.imgur.com/sSEEHBU.png" alt="LAW"></div>
+            <div class="dept-logo-box"><img src="https://i.imgur.com/egvWtOc.png" alt="LAW"></div>
             <div class="dept-text">Die LAW ist für sämtliche juristischen Angelegenheiten innerhalb des FIB zuständig. Dazu gehören die Zusammenarbeit mit Organanwälten, die Vorbereitung rechtlicher Verfahren sowie die Unterstützung bei komplexen Rechtsfragen. Zudem sorgt die Abteilung dafür, dass interne Abläufe und Maßnahmen im Einklang mit geltendem Recht durchgeführt werden.</div>
           </div>
         </div>
@@ -523,7 +496,7 @@ body:has(a:hover) #cursor-ring,body:has(button:hover) #cursor-ring{width:44px;he
         </div>
         <div class="dept-body">
           <div class="dept-content">
-            <div class="dept-logo-box"><img src="https://i.imgur.com/sSEEHBU.png" alt="CIRG"></div>
+            <div class="dept-logo-box"><img src="https://i.imgur.com/m3ZrNsZ.png" alt="CIRG"></div>
             <div class="dept-text">Die C.I.R.G. ist die Elite-Spezialeinheit des Federal Investigation Bureau. Bei eskalierenden Lagen und komplexen Operationen ist die C.I.R.G. die erste Wahl. Wenn Präzision, taktisches Vorgehen und Führungsstärke gefragt sind, steht die Einheit jederzeit bereit. Zudem übernimmt sie die Koordinierung und Protokollierung von Einsätzen, wie beispielsweise Razzien, und arbeitet dabei eng mit der CID zusammen.</div>
           </div>
         </div>
@@ -539,7 +512,7 @@ body:has(a:hover) #cursor-ring,body:has(button:hover) #cursor-ring{width:44px;he
         </div>
         <div class="dept-body">
           <div class="dept-content">
-            <div class="dept-logo-box"><img src="https://i.imgur.com/sSEEHBU.png" alt="CID"></div>
+            <div class="dept-logo-box"><img src="https://i.imgur.com/8w0ANFN.png" alt="CID"></div>
             <div class="dept-text">Die CID ist für die Aufklärung verschiedenster Straftaten und die Durchführung kriminalpolizeilicher Ermittlungen zuständig. Dazu gehören Beweissicherungen, Vernehmungen, Observationen sowie die Analyse und Bearbeitung komplexer Fälle. Durch ihre enge Zusammenarbeit mit anderen Abteilungen und Spezialeinheiten trägt die CID maßgeblich zur Strafverfolgung und Aufrechterhaltung der öffentlichen Sicherheit bei.</div>
           </div>
         </div>
@@ -555,7 +528,7 @@ body:has(a:hover) #cursor-ring,body:has(button:hover) #cursor-ring{width:44px;he
         </div>
         <div class="dept-body">
           <div class="dept-content">
-            <div class="dept-logo-box"><img src="https://i.imgur.com/sSEEHBU.png" alt="HR"></div>
+            <div class="dept-logo-box"><img src="https://i.imgur.com/ejjeyGw.png" alt="HR"></div>
             <div class="dept-text">Unsere HR kümmert sich um sämtliche Personalangelegenheiten. Dazu zählen die Bearbeitung von Bewerbungen, die Durchführung von Erstgesprächen, Organisationswechsel sowie die Entlassung von Mitarbeitenden. Zusätzlich unterstützt die HR neue Mitarbeiter beim Einstieg und sorgt für eine strukturierte Personalverwaltung.</div>
           </div>
         </div>
@@ -571,7 +544,7 @@ body:has(a:hover) #cursor-ring,body:has(button:hover) #cursor-ring{width:44px;he
         </div>
         <div class="dept-body">
           <div class="dept-content">
-            <div class="dept-logo-box"><img src="https://i.imgur.com/sSEEHBU.png" alt="FIBCO"></div>
+            <div class="dept-logo-box"><img src="https://i.imgur.com/kPLRm1S.png" alt="FIBCO"></div>
             <div class="dept-text">Die FIBCO übernimmt Ermittlungen bei Verdacht auf Korruption innerhalb staatlicher Behörden. Sie führt Gespräche, sammelt Beweise, bereitet mögliche Disziplinarverfahren vor und vollstreckt Haftbefehle sowie richterliche Beschlüsse.</div>
           </div>
         </div>
@@ -587,7 +560,7 @@ body:has(a:hover) #cursor-ring,body:has(button:hover) #cursor-ring{width:44px;he
         </div>
         <div class="dept-body">
           <div class="dept-content">
-            <div class="dept-logo-box"><img src="https://i.imgur.com/sSEEHBU.png" alt="TD"></div>
+            <div class="dept-logo-box"><img src="https://i.imgur.com/GPmTCLI.png" alt="TD"></div>
             <div class="dept-text">Unsere TD plant und organisiert Ausbildungen gemeinsam mit den Mitarbeitern. Sie ist verantwortlich für die Schulung neuer sowie bestehender Mitglieder und stellt sicher, dass alle Mitarbeitenden über die notwendigen Kenntnisse und Fähigkeiten verfügen.</div>
           </div>
         </div>
@@ -603,7 +576,7 @@ body:has(a:hover) #cursor-ring,body:has(button:hover) #cursor-ring{width:44px;he
         </div>
         <div class="dept-body">
           <div class="dept-content">
-            <div class="dept-logo-box"><img src="https://i.imgur.com/sSEEHBU.png" alt="PR"></div>
+            <div class="dept-logo-box"><img src="https://i.imgur.com/RBRpbaV.png" alt="PR"></div>
             <div class="dept-text">Unsere PR-Abteilung organisiert Events für Bürgerinnen und Bürger, plant Pressekonferenzen und erstellt Berichte. Sie trägt maßgeblich dazu bei, dass die Bevölkerung regelmäßig über aktuelle Geschehnisse und wichtige Entwicklungen informiert wird und stärkt dadurch das öffentliche Image des FIB.</div>
           </div>
         </div>
@@ -778,12 +751,12 @@ body:has(a:hover) #cursor-ring,body:has(button:hover) #cursor-ring{width:44px;he
 <div class="full-wrap" id="galerie" data-num="09">
   <div class="section-inner">
     <div class="s-label reveal">09 / GALERIE</div>
-    <div class="s-title reveal">Einsatz<span>galerie</span></div>
+    <div class="s-title reveal">Bilder<span>galerie</span></div>
     <div class="s-title-bar reveal"></div>
     <div class="gallery-grid reveal">
       <div class="gallery-item" onclick="openLightbox(this)">
         <img src="https://i.imgur.com/gZbNtHt.png" alt="Einsatz 1">
-        <div class="gallery-overlay"><span class="gallery-caption">Gimo Jimmbo possiert für den FIB-Leader</span></div>
+        <div class="gallery-overlay"><span class="gallery-caption">Gimo Jimmbo possiert für den FIB-Direktor</span></div>
       </div>
       <div class="gallery-item" onclick="openLightbox(this)">
         <img src="https://i.imgur.com/j6n8qZx.png" alt="Einsatz 2">
@@ -797,7 +770,6 @@ body:has(a:hover) #cursor-ring,body:has(button:hover) #cursor-ring{width:44px;he
   </div>
 </div>
 
-<!-- Lightbox -->
 <div id="lightbox">
   <div id="lightbox-close" onclick="closeLightbox()">ESC · SCHLIESSEN</div>
   <img id="lightbox-img" src="" alt="">
@@ -948,32 +920,22 @@ revEls.forEach(el=>obs.observe(el));
   el.style.transition='opacity .3s';
 })();
 
-// ===== LIGHTBOX FIX =====
-// Imgur blocks hotlinking via direct src= on a new img element.
-// Solution: copy the already-loaded pixel data from the gallery <img>
-// onto a <canvas>, convert to blob URL, display that — no new network request.
 function openLightbox(item) {
   const srcImg = item.querySelector('img');
   if (!srcImg) return;
-
   const lb  = document.getElementById('lightbox');
   const lbImg = document.getElementById('lightbox-img');
-
-  // Draw the already-decoded image onto an offscreen canvas and export as blob URL
   const canvas = document.createElement('canvas');
   canvas.width  = srcImg.naturalWidth  || srcImg.width;
   canvas.height = srcImg.naturalHeight || srcImg.height;
   const ctx = canvas.getContext('2d');
   ctx.drawImage(srcImg, 0, 0);
-
   canvas.toBlob(blob => {
     const url = URL.createObjectURL(blob);
-    // Release previous blob URL if any
     if (lbImg._blobUrl) URL.revokeObjectURL(lbImg._blobUrl);
     lbImg._blobUrl = url;
     lbImg.src = url;
   }, 'image/png');
-
   lb.style.display = 'flex';
   lb.classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -988,7 +950,6 @@ function closeLightbox() {
   lbImg.src = '';
   document.body.style.overflow = '';
 }
-// ===== END LIGHTBOX FIX =====
 
 document.getElementById('lightbox').addEventListener('click', function(e) {
   if (e.target === this) closeLightbox();
